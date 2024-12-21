@@ -2,7 +2,6 @@ import socket
 
 from playsound import playsound
 
-# Emergency code to MP3 mapping
 EMERGENCY_CODES = {
     "Code1": "breaking_doors.wav",
     "Code2": "damaging_cameras.wav",
@@ -26,7 +25,7 @@ def play_mp3(code):
         print(f"No MP3 file associated with {code}")
 
 # Client usage
-SERVER_IP = "192.168.0.185"  # Replace with server's IP address
+SERVER_IP = "192.168.0.185"  # please place ur server ip, ie computer 1 ip
 SERVER_PORT = 12345
 
 while True:
